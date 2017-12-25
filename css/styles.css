@@ -1,0 +1,53 @@
+/*.....Normalize css.....*/
+@import 'normalize.css';
+
+/*.....Base Styles.....*/
+
+body,
+form,
+.contact-info,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  justify-content: center;
+  margin:auto;
+  text-align: center;
+}
+
+footer {
+  font-style: italic;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input,
+select {
+  /* width: 50%; */
+  justify-content: center;
+}
+
+.contact-info,
+.newsletter {
+  align-self: left;
+  margin: 0 50px;
+}
+
+input,
+select,
+button,
+footer {
+  margin: 15px 0;
+}
+
+button {
+  width: 20%;
+  align-self: center;
+  cursor: pointer;
+  ;
+}
