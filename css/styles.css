@@ -229,7 +229,7 @@ textarea {
   height: 8px;
   border-radius: 50%;
   background: white;
-  margin: 31px 0;
+  margin: 31px -1px;
 }
 
 input,
