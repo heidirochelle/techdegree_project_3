@@ -5,12 +5,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <style>
-    body {
+    <body> {
       font-family: 'Merriweather', serif;
     }
     input:focus {
       background-color: #bfbfbf;
-      outline: none;
+      outline-color: #00334d;
     }
   </style>
   <title>Online Registration Form</title>
@@ -58,7 +58,7 @@
 
         <div class="inputs">
           <label for="state">State</label>
-          <select class="options" id="state" name="state">
+          <select class="options states" id="state" name="state">
             <option value="" disabled selected>Choose State</option>
             <option value="alabama">Alabama</option>
             <option value="alaska">Alaska</option>
@@ -144,12 +144,12 @@
           <h3>Newsletter format</h3>
 
           <label class="container" for="htmlformat">HTML
-          <input type="radio" id="htmlformat" name="htmlformat">
+          <input type="radio" id="htmlformat" name="radio">
           <span class="round"></span>
           </label>
 
           <label class="container" for="plaintext">Plain text
-          <input type="radio" id="plaintext" name="plaintext">
+          <input type="radio" id="plaintext" name="radio">
           <span class="round"></span>
           </label>
 

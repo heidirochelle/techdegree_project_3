@@ -105,6 +105,17 @@ button {
   padding-bottom: 30px;
 }
 
+.inputs {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.states {
+  min-width: 100%;
+  padding-right: 15px;
+}
+
 .section-title  {
   text-align: left;
   margin: 20px 0 30px 0;
@@ -200,7 +211,6 @@ input[type=tel]:focus {
 .container {
   display: flex;
   flex-direction: column;
-  position: relative;
   cursor: pointer;
   margin: 15px 0px;
 }
@@ -300,6 +310,10 @@ input[type=tel]:focus {
 
 @media (min-width: 769px) {
 
+  /* body {
+    max-width: 800px;
+  } */
+
   main,
   .contact-info,
   .newsletter {
@@ -330,7 +344,7 @@ input[type=tel]:focus {
   label {
     position: relative;
     float: left;
-    margin: 15px 50px 15px 0;
+    margin: 0 50px 0 0;
     padding: 20px 13px;
   }
 
@@ -340,8 +354,12 @@ input[type=tel]:focus {
   }
 
   .options {
-    width: 60%;
+    width: 100%;
     margin-left: 20px;
+  }
+
+  .states {
+    min-width: 95%;
   }
 
   .title {
@@ -382,5 +400,33 @@ input[type=tel]:focus {
   button {
     max-width: 100%;
     margin: 10px;
+  }
+
+  input[type=text] {
+      transition: ease-in-out, width .35s ease-in-out;
+      transition: background-color 1.5s ease;
+  }
+
+  input[type=email] {
+      transition: ease-in-out, width .35s ease-in-out;
+      transition: background-color 1.5s ease;
+  }
+
+  input[type=tel] {
+      transition: ease-in-out, width .35s ease-in-out;
+      transition: background-color 1.5s ease;
+  }
+
+  input[type=text]:focus {
+      width: 420px;
+
+  }
+
+  input[type=email]:focus {
+      width: 420px;
+  }
+
+  input[type=tel]:focus {
+      width: 420px;
   }
 }
