@@ -195,16 +195,16 @@ input[type=tel] {
 }
 
 input[type=text]:focus {
-    width: 420px;
+    width: 250px;
 
 }
 
 input[type=email]:focus {
-    width: 420px;
+    width: 250px;
 }
 
 input[type=tel]:focus {
-    width: 420px;
+    width: 250px;
 }
 
 /*.....checkbox and radio styles.....*/
@@ -418,15 +418,15 @@ input[type=tel]:focus {
   }
 
   input[type=text]:focus {
-      width: 420px;
+      width: 650px;
 
   }
 
   input[type=email]:focus {
-      width: 420px;
+      width: 650px;
   }
 
   input[type=tel]:focus {
-      width: 420px;
+      width: 650px;
   }
 }
