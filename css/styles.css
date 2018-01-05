@@ -179,32 +179,19 @@ input[placeholder] {
 }
 
 
-input[type=text] {
-    transition: ease-in-out, width .35s ease-in-out;
-    transition: background-color 1.5s ease;
-}
-
-input[type=email] {
-    transition: ease-in-out, width .35s ease-in-out;
-    transition: background-color 1.5s ease;
-}
-
-input[type=tel] {
-    transition: ease-in-out, width .35s ease-in-out;
-    transition: background-color 1.5s ease;
-}
-
 input[type=text]:focus {
-    width: 250px;
-
+    transition: ease-in-out, width .35s ease-in-out;
+    transition: background-color 1.5s ease;
 }
 
 input[type=email]:focus {
-    width: 250px;
+    transition: ease-in-out, width .35s ease-in-out;
+    transition: background-color 1.5s ease;
 }
 
 input[type=tel]:focus {
-    width: 250px;
+    transition: ease-in-out, width .35s ease-in-out;
+    transition: background-color 1.5s ease;
 }
 
 /*.....checkbox and radio styles.....*/
@@ -308,7 +295,7 @@ input[type=tel]:focus {
 
 /*.....media queries....*/
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   /* body {
     max-width: 800px;
@@ -327,39 +314,42 @@ input[type=tel]:focus {
     margin-right: 40px;
   }
 
-  main {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+  main,
+ .contact-info,
+ .newsletter {
+   max-width: 100%;
+   display: flex;
+ }
 
-  input,
-  select {
-    float: right;
-  }
 
-  select {
-    min-width: 64%;
-  }
+ header {
+   margin-left: 40px;
+   margin-right: 40px;
+ }
 
-  label {
-    position: relative;
-    float: left;
-    margin: 0 50px 0 0;
-    padding: 20px 13px;
-  }
+ main {
+   margin-left: 20px;
+   margin-right: 20px;
+ }
+
+ .inputs {
+   display: flex;
+   flex-direction: row;
+ }
+
+ label {
+   padding-top: 30px;
+ }
+
+ input,
+ select {
+   width: 70%;
+   margin-left: 40px;
+ }
 
   input#zip {
     max-width: 30%;
     margin-right: 12.75em;
-  }
-
-  .options {
-    width: 100%;
-    margin-left: 20px;
-  }
-
-  .states {
-    min-width: 95%;
   }
 
   .title {
@@ -402,31 +392,19 @@ input[type=tel]:focus {
     margin: 10px;
   }
 
-  input[type=text] {
-      transition: ease-in-out, width .35s ease-in-out;
-      transition: background-color 1.5s ease;
-  }
-
-  input[type=email] {
-      transition: ease-in-out, width .35s ease-in-out;
-      transition: background-color 1.5s ease;
-  }
-
-  input[type=tel] {
-      transition: ease-in-out, width .35s ease-in-out;
-      transition: background-color 1.5s ease;
-  }
-
   input[type=text]:focus {
-      width: 650px;
-
+      transition: ease-in-out, width .35s ease-in-out;
+      transition: background-color 1.5s ease;
   }
 
   input[type=email]:focus {
-      width: 650px;
+      transition: ease-in-out, width .35s ease-in-out;
+      transition: background-color 1.5s ease;
   }
 
   input[type=tel]:focus {
-      width: 650px;
+      transition: ease-in-out, width .35s ease-in-out;
+      transition: background-color 1.5s ease;
   }
+
 }
