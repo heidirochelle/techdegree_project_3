@@ -118,11 +118,12 @@ button {
 
 .section-title  {
   text-align: left;
+  vertical-align: center;
   margin: 20px 0 30px 0;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-left: 15px;
   padding-bottom: 15px;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   background-color: #59b300;
   width: 100%;
@@ -151,6 +152,7 @@ button {
 
 .comments {
   margin-top: 30px;
+  min-width: 100%;
 }
 
 label.comments {
@@ -196,10 +198,12 @@ input[type=tel]:focus {
 
 /*.....checkbox and radio styles.....*/
 .container {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  margin: 15px 0px;
+display: block;
+position: relative;
+padding-left: 65px;
+margin-bottom: 12px;
+padding-bottom: 13px;
+padding-top: 0;
 }
 
 .container input {
@@ -213,7 +217,8 @@ input[type=tel]:focus {
   left: 0;
   height: 25px;
   width: 25px;
-  margin-top: 10px;
+  position: absolute;
+  margin-top: 0;
   background-color: #d9d9d9;
   border-radius: 5px;
 } /*....creates custom checkbox.....*/
@@ -243,7 +248,7 @@ input[type=tel]:focus {
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  margin: 31px 0;
+  margin: 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -260,7 +265,8 @@ input[type=tel]:focus {
   left: 0;
   height: 25px;
   width: 25px;
-  margin-top: 10px;
+  position: absolute;
+  margin-top: 0;
   background-color: #d9d9d9;
   border-radius: 50%;
 } /*....creates custom radio.....*/
@@ -288,9 +294,9 @@ input[type=tel]:focus {
   left: 9px;
   width: 8px;
   height: 8px;
+  margin: 0;
   border-radius: 50%;
   background: white;
-  margin: 31px -1px;
 } /*.....radio button style after checked.....*/
 
 /*.....media queries....*/
@@ -308,6 +314,10 @@ input[type=tel]:focus {
     display: flex;
   }
 
+  .title {
+    padding: 8px;
+  }
+
 
   header {
     margin-left: 40px;
@@ -319,12 +329,6 @@ input[type=tel]:focus {
  .newsletter {
    max-width: 100%;
    display: flex;
- }
-
-
- header {
-   margin-left: 40px;
-   margin-right: 40px;
  }
 
  main {
@@ -339,12 +343,17 @@ input[type=tel]:focus {
 
  label {
    padding-top: 30px;
+   width: 100px;
  }
 
  input,
  select {
    width: 70%;
    margin-left: 40px;
+ }
+
+ .states {
+   min-width: 74%;
  }
 
   input#zip {
@@ -360,32 +369,6 @@ input[type=tel]:focus {
     text-align: center;
     max-width: 100%;
   }
-
-  .container {
-  display: block;
-  position: relative;
-  padding-left: 65px;
-  margin-bottom: 12px;
-  padding-top: 0;
-}
-
-  .checkmark {
-    position: absolute;
-    margin-top: 0;
-  }
-
-  .container .checkmark:after {
-    margin: 0;
-  }
-
-.round {
-  position: absolute;
-  margin-top: 0;
-}
-
-.container .round:after {
-  margin: 0;
-}
 
   button {
     max-width: 100%;
