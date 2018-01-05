@@ -20,6 +20,11 @@ h2 {
   margin-top: 45px;
 }
 
+input:focus {
+  background-color: #bfbfbf;
+  outline-color: #00334d;
+}
+
 p {
   font-size: 1.5em;
   padding: 0 15px;
